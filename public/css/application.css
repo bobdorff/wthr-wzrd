@@ -15,9 +15,10 @@
   top: 0;
 }
 
-/*
 .text-container {
   position: fixed;
   top: 0;
-  left: 60%;
-}*/
+  margin-top: 14%;
+  margin-left: 60%;
+  text-align: center;
+}

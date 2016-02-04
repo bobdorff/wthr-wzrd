@@ -1,9 +1,10 @@
 get '/' do
   wiz = WeatherWizard.new
-  @temp =     wiz.get_weather["currently"]["temperature"]
-  @precip =   wiz.get_weather["currently"]["precipType"]
-  @humidity = wiz.get_weather["currently"]["humidity"]
-  @wind =     wiz.get_weather["currently"]["windSpeed"]
+  data = wiz.get_weather
+  @temp =     data["currently"]["temperature"]
+  @precip =   data["currently"]["precipType"]
+  @humidity = data["currently"]["humidity"]
+  @wind =     data["currently"]["windSpeed"]
   erb :'index'
 end
 
