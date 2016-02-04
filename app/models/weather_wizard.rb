@@ -10,7 +10,6 @@ class WeatherWizard
     parsed_response = JSON.parse(response.body)
     @lat = parsed_response['location']['lat']
     @lng = parsed_response['location']['lng']
-
   end
 
   def today_plus_year
