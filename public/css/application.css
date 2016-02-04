@@ -1,0 +1,23 @@
+.wizard-container {
+  width: 100%;
+}
+
+#images {
+  width: 78%;
+  position: fixed;
+  top: 0;
+}
+
+#cloud {
+  margin-top: 2%;
+  width: 90%;
+  position: fixed;
+  top: 0;
+}
+
+/*
+.text-container {
+  position: fixed;
+  top: 0;
+  left: 60%;
+}*/

@@ -1,4 +1,10 @@
 $(document).ready(function() {
+<<<<<<< HEAD
+  // Location
+               // Weather for Location
+
+  // Update Display
+=======
   var google = window.google_api_key;
   var location_request = $.ajax({
     url: "https://www.googleapis.com/geolocation/v1/geolocate?key="+google,
@@ -19,4 +25,5 @@ $(document).ready(function() {
           method: "POST"
     });
   });
+>>>>>>> e9040e2f78ba0b1dde3be67695d3209f1833f3c3
 });

@@ -4,7 +4,6 @@ get '/' do
   @precip =   wiz.get_weather["currently"]["precipType"]
   @humidity = wiz.get_weather["currently"]["humidity"]
   @wind =     wiz.get_weather["currently"]["windSpeed"]
-
   erb :'index'
 end
 
