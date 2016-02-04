@@ -32,7 +32,7 @@ class WeatherWizard
   end
 
   def forecast_url
-    "https://api.forecast.io/forecast/#{ENV["FORCAST_API_KEY"]}/#{@lat},#{@lng},#{today_plus_year}"
+    "https://api.forecast.io/forecast/#{ENV["FORECAST_API_KEY"]}/#{@lat},#{@lng},#{today_plus_year}"
   end
 
 end
