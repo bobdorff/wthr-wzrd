@@ -27,13 +27,6 @@ class WeatherWizard
     weather_code
   end
 
-
-  # temperature = get_weather["currently"]["temperature"]]
-  # precipitation = get_weather["currently"]["precipType"]
-  # humidity = get_weather["currently"]["humidity"]
-  # wind_speed = get_weather["currently"]["windSpeed"]
-
-
   private
   def google_url
     "https://www.googleapis.com/geolocation/v1/geolocate?key=#{ENV["GOOGLE_API_KEY"]}"
@@ -44,6 +37,3 @@ class WeatherWizard
   end
 
 end
-
-wiz = WeatherWizard.new
-p wiz.get_weather
