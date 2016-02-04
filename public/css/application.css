@@ -1,3 +1,16 @@
+body {
+  /*background-image: url("../imgs/space1.jpg");*/
+/*background-color: red;*/
+}
+
+.welcome {
+  font-family: Impact, Charcoal, sans-serif;
+  letter-spacing: 1.5px;
+  padding-left: 5%;
+  font-size: 8em;
+  margin-top: .1em;
+}
+
 .wizard-container {
   width: 100%;
 }
@@ -13,12 +26,25 @@
   width: 90%;
   position: fixed;
   top: 0;
+  /*opacity: 0.5;*/
 }
 
 .text-container {
   position: fixed;
   top: 0;
-  margin-top: 14%;
-  margin-left: 60%;
+  margin-top: 10%;
+  margin-left: 59.5%;
   text-align: center;
+}
+
+#temp {
+  font-size: 3em;
+}
+
+#heading {
+  border-bottom: 1px solid;
+}
+
+td {
+  padding: 7px;
 }
