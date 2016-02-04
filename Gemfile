@@ -14,6 +14,9 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'forecast_io'
+gem 'httparty'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
