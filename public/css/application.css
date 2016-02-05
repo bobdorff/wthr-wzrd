@@ -1,10 +1,15 @@
-#random {
-  margin-top: 21%;
-  margin-right: 24%;
+#random-button {
+  margin-left:59.5%;
+  margin-top:35%;
+  font-size: 2em;
+  position: fixed;
+  font-family: Impact, Charcoal, sans-serif;
+  letter-spacing: 1.5px;
 }
 
 a {
   color: yellow;
+  text-decoration: none;
 }
 
 a:hover {
@@ -24,7 +29,6 @@ a:active {
   top: 0;
   position: fixed;
   z-index: -1;
-  image-resolution: 72dpi;
 }
 
 audio {
@@ -38,15 +42,17 @@ audio {
   font-size: 8em;
   margin-top: .1em;
   color: yellow;
+  position: fixed;
 }
 
 .the-truth {
   color: yellow;
   font-family: Impact, Charcoal, sans-serif;
   letter-spacing: 1px;
-  padding-left: 12%;
   font-size: 2em;
-  margin-top: -2em;
+  margin-top: 10%;
+  margin-left: 13%;
+  position: fixed;
 }
 
 .maybe {
@@ -54,8 +60,9 @@ audio {
   font-family: Impact, Charcoal, sans-serif;
   letter-spacing: 1px;
   font-size: 2em;
-  margin-top: 35%;
+  margin-top: 45%;
   margin-left: 85%;
+  position: fixed;
 }
 
 #random {
@@ -94,6 +101,7 @@ audio {
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
   letter-spacing: .5px;
+  z-index: 2;
 }
 
 table {
