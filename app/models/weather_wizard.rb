@@ -5,7 +5,7 @@ class WeatherWizard
   def geocode_ip
     response = HTTParty.post(google_url,
       body:    { "consider_ip" => true }.to_json,
-      headers: { 'Content-Type' => 'application/json'
+      headers: { 'Content-Type' => 'application/json'})
     parsed_response = JSON.parse(response.body)
     @lat = parsed_response['location']['lat']
     @lng = parsed_response['location']['lng']
