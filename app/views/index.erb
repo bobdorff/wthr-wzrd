@@ -1,9 +1,9 @@
-<img id="background" src="imgs/space3.jpg" alt="space">
+<img id="background" src=<%= "imgs/space/#{rand(0..2)}.jpg" %> alt="space">
 <h1 class="welcome"> weather wizard </h1>
 <h2 class="the-truth"> the weather a year from now will be exactly...</h2>
 <div class="wizard-container">
   <img id="images" src="imgs/1Body.png" alt="Wizard Body">
-  <img id="images" src=<%= "imgs/heads/#{rand(3)}.png" %> alt="Twonk Head">
+  <img id="images" src=<%= "imgs/heads/#{rand(0..2)}.png" %> alt="Twonk Head">
   <img id="cloud" src="imgs/5Cloud.png" alt="Cloud">
   <div class="text-container">
     <%= erb :"_weather_table", layout: false, locals: {temp: @temp, precip: @precip, humidity: @humidity, wind: @wind} %>
