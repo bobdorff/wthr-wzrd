@@ -3,9 +3,7 @@
 <h2 class="the-truth"> the weather a year from now will be exactly...</h2>
 <div class="wizard-container">
   <img id="images" src="imgs/1Body.png" alt="Wizard Body">
-  <!-- <img id="images" src="imgs/2Baker.png" alt="Baker's Head"> -->
-  <!-- <img id="images" src="imgs/3Angry.png" alt="Angry Head"> -->
-  <img id="images" src="imgs/4Twonk.png" alt="Twonk Head">
+  <img id="images" src=<%= "imgs/heads/#{rand(3)}.png" %> alt="Twonk Head">
   <img id="cloud" src="imgs/5Cloud.png" alt="Cloud">
   <div class="text-container">
     <p id='temp'><%= @temp %>°</p>
