@@ -6,7 +6,23 @@
       <td id='wind'>Windspeed </td>
     </tr>
     <tr id='table-body'>
-      <td id='precip'><%= precip.capitalize %> </td>
+      <% if precip == "snow" %>
+      <td id='precip'> <img id="icon" src="imgs/precipitation/snow.png"> </td>
+
+      <% elsif precip == "rain" %>
+      <td id='precip'> <img id="icon" src="imgs/precipitation/Rain.png"></td>
+
+      <% elsif precip == "hail" %>
+      <td id='precip'> <img id="icon" src="imgs/precipitation/hail.png"> </td>
+
+      <% elsif precip == "sleet" %>
+      <td id='precip'> <img id="icon" src="imgs/precipitation/sleet.png"> </td>
+
+      <% else %>
+      <td id='precip'> <img id="icon" src="imgs/precipitation/Sun.png"> </td>
+
+      <% end %>
+
       <td id='humidity'><%= humidity %> </td>
       <td id='wind'><%= wind %> mph</td>
     </tr>

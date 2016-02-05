@@ -1,6 +1,27 @@
-body {
-  /*background-image: url("../imgs/space1.jpg");*/
-/*background-color: red;*/
+#random-button {
+  margin-left:59.5%;
+  margin-top:35%;
+  font-size: 2em;
+  position: fixed;
+  font-family: Impact, Charcoal, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffff66;
+}
+
+a:visited {
+  color: yellow;
+}
+
+a:active {
+  color: yellow;
 }
 
 #background {
@@ -21,15 +42,17 @@ audio {
   font-size: 8em;
   margin-top: .1em;
   color: yellow;
+  position: fixed;
 }
 
 .the-truth {
   color: yellow;
   font-family: Impact, Charcoal, sans-serif;
   letter-spacing: 1px;
-  padding-left: 12%;
   font-size: 2em;
-  margin-top: -2em;
+  margin-top: 10%;
+  margin-left: 13%;
+  position: fixed;
 }
 
 .maybe {
@@ -37,8 +60,9 @@ audio {
   font-family: Impact, Charcoal, sans-serif;
   letter-spacing: 1px;
   font-size: 2em;
-  margin-top: 35%;
+  margin-top: 45%;
   margin-left: 85%;
+  position: fixed;
 }
 
 #random {
@@ -77,6 +101,7 @@ audio {
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
   letter-spacing: .5px;
+  z-index: 2;
 }
 
 table {
@@ -95,4 +120,9 @@ table {
 
 td {
   padding: 7px;
+}
+
+#icon {
+  width: 50px;
+  height: 50px;
 }
