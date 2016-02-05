@@ -21,10 +21,10 @@ a:active {
 
 #background {
   width: 100%;
-  height: 100%;
   top: 0;
   position: fixed;
   z-index: -1;
+  image-resolution: 72dpi;
 }
 
 audio {
