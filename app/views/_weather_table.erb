@@ -1,29 +1,32 @@
 <p id='temp'><%= temp %>°</p>
-  <table>
-    <tr id='heading'>
-      <td id='precip'>Precipitation </td>
-      <td id='humidity'>Humidity </td>
-      <td id='wind'>Windspeed </td>
-    </tr>
-    <tr id='table-body'>
-      <% if precip == "snow" %>
-      <td id='precip'> <img id="icon" src="imgs/precipitation/snow.png"> </td>
+<p id='location'><%= city %></p>
+<table>
+  <tr id='heading'>
+    <td id='precip'>Precipitation </td>
+    <td id='humidity'>Humidity </td>
+    <td id='wind'>Windspeed </td>
+  </tr>
+  <tr id='table-body'>
+    <% if precip == "snow" %>
+    <td id='precip'> <img id="icon" src="imgs/precipitation/snow.png"> </td>
 
-      <% elsif precip == "rain" %>
-      <td id='precip'> <img id="icon" src="imgs/precipitation/Rain.png"></td>
+    <% elsif precip == "rain" %>
+    <td id='precip'> <img id="icon" src="imgs/precipitation/Rain.png"></td>
 
-      <% elsif precip == "hail" %>
-      <td id='precip'> <img id="icon" src="imgs/precipitation/hail.png"> </td>
+    <% elsif precip == "hail" %>
+    <td id='precip'> <img id="icon" src="imgs/precipitation/hail.png"> </td>
 
-      <% elsif precip == "sleet" %>
-      <td id='precip'> <img id="icon" src="imgs/precipitation/sleet.png"> </td>
+    <% elsif precip == "sleet" %>
+    <td id='precip'> <img id="icon" src="imgs/precipitation/sleet.png"> </td>
 
-      <% else %>
-      <td id='precip'> <img id="icon" src="imgs/precipitation/Sun.png"> </td>
+    <% elsif precip == "-" %>
+    <td id='precip'> - </td>
+    <% else %>
+    <td id='precip'> <img id="icon" src="imgs/precipitation/Sun.png"> </td>
 
-      <% end %>
+    <% end %>
 
-      <td id='humidity'><%= humidity %> </td>
-      <td id='wind'><%= wind %> mph</td>
-    </tr>
-  </table>
+    <td id='humidity'><%= humidity %> </td>
+    <td id='wind'><%= wind %> mph</td>
+  </tr>
+</table>

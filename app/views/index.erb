@@ -6,7 +6,7 @@
   <img id="images" src=<%= "imgs/heads/#{rand(0..2)}.png" %> alt="Twonk Head">
   <img id="cloud" src="imgs/5Cloud.png" alt="Cloud">
   <div class="text-container">
-    <%= erb :"_weather_table", layout: false, locals: {temp: @temp, precip: @precip, humidity: @humidity, wind: @wind} %>
+    <%= erb :"_weather_table", layout: false, locals: {temp: @temp, precip: @precip, humidity: @humidity, wind: @wind, city: @city} %>
   </div>
 </div>
 <div id='random-button'>

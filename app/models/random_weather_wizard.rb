@@ -1,14 +1,11 @@
 require 'date'
 require 'httparty'
 
-class WeatherWizard
+class RandomWeatherWizard
   def geocode_ip
-    response = HTTParty.post(google_url,
-      body:    { "consider_ip" => true }.to_json,
-      headers: { 'Content-Type' => 'application/json'})
-    parsed_response = JSON.parse(response.body)
-    @lat = parsed_response['location']['lat']
-    @lng = parsed_response['location']['lng']
+    p "___________________"
+    p @lat = rand_lat
+    p @lng = rand_lng
   end
 
   def today_plus_year
@@ -23,6 +20,16 @@ class WeatherWizard
   def get_weather
     geocode_ip
     weather_code
+  end
+
+  def rand_lat
+    rand(-90.000000000...90.000000000)
+    #40.7127
+  end
+
+  def rand_lng
+    rand(-180.000000000...180.000000000)
+    #74.0059
   end
 
   def location_finder
