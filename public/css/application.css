@@ -41,6 +41,14 @@ audio {
   margin-left: 85%;
 }
 
+#random {
+  color: yellow;
+  float: right;
+  font-family: Impact, Charcoal, sans-serif;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
 .wizard-container {
   width: 100%;
 }
