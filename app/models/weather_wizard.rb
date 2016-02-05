@@ -25,6 +25,11 @@ class WeatherWizard
     weather_code
   end
 
+  def rand_weather
+    response = HTTParty.get(forecast_url)
+    JSON.parse(response.body)
+  end
+
   private
   def google_url
     "https://www.googleapis.com/geolocation/v1/geolocate?key=#{ENV["GOOGLE_API_KEY"]}"
@@ -32,6 +37,11 @@ class WeatherWizard
 
   def forecast_url
     "https://api.forecast.io/forecast/#{ENV["FORECAST_API_KEY"]}/#{@lat},#{@lng},#{today_plus_year}"
+  end
+
+  def rand_forecast_url
+    "https://api.forecast.io/forecast/#{ENV["FORECAST_API_KEY"]}/#{rand(-90.000000000...90.000000000)
+},#{rand(-180.000000000...180.000000000)},#{today_plus_year}"
   end
 
 end

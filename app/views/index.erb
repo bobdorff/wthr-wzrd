@@ -6,19 +6,10 @@
   <img id="images" src=<%= "imgs/heads/#{rand(3)}.png" %> alt="Twonk Head">
   <img id="cloud" src="imgs/5Cloud.png" alt="Cloud">
   <div class="text-container">
-    <p id='temp'><%= @temp %>°</p>
-    <table>
-      <tr id='heading'>
-        <td id='precip'>Precipitation </td>
-        <td id='humidity'>Humidity </td>
-        <td id='wind'>Windspeed </td>
-      </tr>
-      <tr id='table-body'>
-        <td id='precip'><%= @precip.capitalize %> </td>
-        <td id='humidity'><%= @humidity %> </td>
-        <td id='wind'><%= @wind %> mph</td>
-      </tr>
-    </table>
+    <%= erb :"_weather_table", layout: false, locals: {temp: @temp, precip: @precip, humidity: @humidity, wind: @wind} %>
+  </div>
+  <div id='random'>
+    <a href="/random">See a random city's future!</a>
   </div>
 
 </div>
