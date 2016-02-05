@@ -8,11 +8,9 @@
   <div class="text-container">
     <%= erb :"_weather_table", layout: false, locals: {temp: @temp, precip: @precip, humidity: @humidity, wind: @wind} %>
   </div>
-  <div id='random'>
-    <a href="/random">See a random city's future!</a>
-  </div>
-
 </div>
-
+<div id='random'>
+  <a href="/random">Randomize Location</a>
+</div>
 <h2 class="maybe">...maybe</h2>
 
