@@ -1,6 +1,17 @@
 body {
-  background-image: url("../imgs/space1.jpg");
+  /*background-image: url("../imgs/space1.jpg");*/
 /*background-color: red;*/
+}
+
+#background {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+audio {
+  display: none;
 }
 
 .welcome {
@@ -43,7 +54,7 @@ body {
 }
 
 #cloud {
-  margin-top: 2%;
+  margin-top: 5%;
   width: 90%;
   position: fixed;
   top: 0;
@@ -53,8 +64,8 @@ body {
 .text-container {
   position: fixed;
   top: 0;
-  margin-top: 10%;
-  margin-left: 58.5%;
+  margin-top: 13%;
+  margin-left: 58%;
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
   letter-spacing: .5px;
