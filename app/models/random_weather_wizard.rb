@@ -23,11 +23,13 @@ class RandomWeatherWizard
   end
 
   def rand_lat
-   rand(-90.000000000...90.000000000)
+    rand(-90.000000000...90.000000000)
+    #40.7127
   end
 
   def rand_lng
     rand(-180.000000000...180.000000000)
+    #74.0059
   end
 
   def location_finder

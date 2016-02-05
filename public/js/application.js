@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $("#random").on("click", function(event){
+    $("#random-button").on("click", function(event){
       event.preventDefault();
       var getRandom = $.ajax({
         url: "/random",
